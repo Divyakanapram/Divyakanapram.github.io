@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#x1F98B; Creative Showcase - Divya Thekke Kanapram &#x1F98B;</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            position: relative;
+            overflow: hidden; /* Prevent scrollbars due to symbol movement */
+        }
+        header {
+            background-color: #e6e6e6;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #ccc;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin: 20px auto;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #800080; /* Purple color */
+            text-align: center;
+        }
+        p {
+            margin: 0 0 20px 0;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        .creative-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .creative-item {
+            flex: 1 1 calc(50% - 20px);
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .creative-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e6e6e6;
+            color: #333;
+            border-top: 1px solid #ccc;
+        }
+        footer p {
+            margin: 0;
+        }
+        .moving-butterfly {
+            font-size: 5rem; /* Size of the butterfly icon */
+            position: absolute;
+            top: 0; /* Adjust as needed */
+            left: 0; /* Adjust as needed */
+            pointer-events: none; /* Prevent interaction with the symbol */
+            z-index: 999; /* Ensure it appears above other elements */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creative Showcase</h1>
+    </header>
+    <nav>
+        <a href="index.html">Back to Main Page</a> <!-- Link to the main page -->
+    </nav>
+    <div class="container">
+        <section id="creative-works">
+            <h2>The beauty of creation</h2>
+            <p>Discover a curated selection of my creative projects, including artwork, writing, and multimedia experiments. Each piece reflects my passion for pushing the boundaries of creativity and innovation.</p>
+            <div class="creative-gallery">
+                <div class="creative-item">
+                    <h3>Photography</h3>
+                    <!-- <img src="path_to_photography_image.jpg" alt="Sample Photography" />
+                    <p>A glimpse into the world through my lens. <a href="link_to_photography_page" target="_blank">Explore gallery</a></p>
+                    <p>The essence of the universe captured through photography.</p> -->
+                </div>
+                <div class="creative-item">
+                    <h3>Writing & Poetry</h3>
+                    <!-- <img src="path_to_writing_image.jpg" alt="Writing and Poetry" />
+                    <p>Poems and short stories that capture moments and emotions. <a href="link_to_writing_page" target="_blank">Read more</a></p>
+                    <p>The sound of the soul expressed through words.</p> -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Divya Thekke Kanapram. All rights reserved.</p>
+    </footer>
+    <div class="moving-butterfly" id="moving-butterfly">&#x1F98B;</div> <!-- Butterfly emoji -->
+    <script>
+        // JavaScript to animate the butterfly icon
+        document.addEventListener("DOMContentLoaded", function() {
+            const butterfly = document.getElementById('moving-butterfly');
+            const maxX = window.innerWidth - butterfly.clientWidth;
+            const maxY = window.innerHeight - butterfly.clientHeight;
+
+            function moveButterfly() {
+                const randomX = Math.random() * maxX;
+                const randomY = Math.random() * maxY;
+
+                butterfly.style.transform = `translate(${randomX}px, ${randomY}px)`;
+                setTimeout(moveButterfly, 3000); // Change position every 3 seconds
+            }
+
+            moveButterfly();
+        });
+    </script>
+</body>
+</html>
