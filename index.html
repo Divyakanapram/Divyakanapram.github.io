@@ -36,7 +36,6 @@
         }
         nav a {
             margin: 0 20px;
-            text-decoration: none;
             color: #333;
             font-weight: bold;
             transition: color 0.3s ease;
@@ -76,47 +75,17 @@
         li {
             margin-bottom: 10px;
         }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #e6e6e6;
-            color: #333;
-            border-top: 1px solid #ccc;
-        }
-        footer p {
-            margin: 0;
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>Divya Thekke Kanapram</h1>
-        <p>Welcome to My Creative Journey</p>
     </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#cv">CV</a>
-        <a href="#publications">Publications</a>
-        <a href="creative-showcase.html">Creative Showcase</a> <!-- Added link -->
-        <a href="contact.html">Contact</a> <!-- Added link -->
-    </nav>
     <div class="container">
-        <section id="about">
+        <section id="about-me">
             <h2>About Me</h2>
-            <img src="Photo/Divya.jpeg" alt="Divya Thekke Kanapram" class="profile-photo">
-            <p>I am a dedicated AI researcher with a profound curiosity for the evolving landscape of artificial intelligence. My work focuses on exploring cutting-edge technologies and developing innovative solutions to advance the field. This passion drives me to continually seek deeper understanding and uncover new insights. Below, you can access my CV and review my publications to learn more about my research and contributions.</p>
-        </section>
-        <section id="cv">
-            <h2>Curriculum Vitae</h2>
-            <p>Download my CV from the link below:</p>
-            <a href="CV/Divya_Thekke_Kanapram_CV.pdf" target="_blank">Download CV</a>
+            <p>I’m an AI Research Scientist and Machine Learning Engineer driven by a deep curiosity for the evolving landscape of artificial intelligence. My research focuses on Bayesian modeling, deep learning, and large language models (LLMs) — advancing the development of interpretable, fair, and trustworthy AI systems.</p>
+            <p>Previously, I conducted postdoctoral research at the University of Cambridge and Imperial College London, where I worked on intelligent sensing and data-driven modeling. I’m passionate about exploring emerging technologies and uncovering new insights that bridge scientific understanding with real-world impact.</p>
         </section>
         <section id="publications">
             <h2>Publications</h2>
@@ -136,26 +105,10 @@
                     <span style="display: inline-block;">
                         <em>Sensors, 2022</em>
                     </span>
+                    <p>This paper introduces a graph-powered interpretable ML model for abnormality detection, integrating self-awareness (SA) and collective awareness (CA) functionalities in agent networks. Using generative Dynamic Bayesian Networks (DBNs) and a Markov Jump Particle Filter (MJPF), interpretability is achieved via graph matching of semantic vocabulary. This approach enables the model to self-explain its decisions and incrementally update learned representations based on anomalies.</p>
                 </li>
-
                 <li>
-                    <strong>Divya Thekke Kanapram,</strong> Mario Marchese, Eliane L. Bodanese, David Martín Gómez, Lucio Marcenaro ,and Carlo Regazzoni<br>
-                    <a href="https://doi.org/10.1109/JIOT.2020.3043199" target="_blank">
-                        Dynamic Bayesian Collective Awareness Models for a Network of Ego-Things
-                    </a>
-                    <br>
-                    <span style="display: inline-block; margin-right: 10px;">
-                        <a href="Publications/6_Dynamic Bayesian Collective Awareness Models for a Network of Ego-Things_self.pdf" target="_blank">
-                            [PDF]
-                        </a>
-                    </span>
-                    <span style="display: inline-block;">
-                        <em>IEEE Internet of Things Journal, VOL. 8, NO. 5, March 2021</em>
-                    </span>
-                </li>
-
-                <li>
-                    <strong>Divya Thekke Kanapram,</strong> Fabio Patrone, Pablo Marin-Plaza, Mario Marchese, Eliane L. Bodanese,  Lucio Marcenaro , David Martín Gómez ,and Carlo Regazzoni<br>
+                    <strong>Divya Thekke Kanapram,</strong> Fabio Patrone, Pablo Marin-Plaza, Mario Marchese, Eliane L. Bodanese, Lucio Marcenaro, David Martín Gómez, and Carlo Regazzoni<br>
                     <a href="https://doi.org/10.1109/JIOT.2020.2974680" target="_blank">
                         Collective Awareness for Abnormality Detection in Connected Autonomous Vehicles
                     </a>
@@ -168,9 +121,10 @@
                     <span style="display: inline-block;">
                         <em>IEEE Internet of Things Journal, VOL. 7, NO. 5, MAY 2020</em>
                     </span>
+                    <p>This article develops collective awareness (CA) models for networked autonomous vehicles, enabling synchronous abnormality detection across the system. It employs data-driven DBNs inferred by a Markov Jump Particle Filter (MJPF), utilizing Hellinger distance metrics to quantify anomalies. The significance lies in assessing the model's robustness against realistic communication channel effects, including packet loss and delay via the IEEE 802.11p protocol.</p>
                 </li>
                 <li>
-                    <strong>Divya Thekke Kanapram, </strong>Pablo Marin-Plaza, Lucio Marcenaro, David Martin, Arturo de la Escalera and Carlo Regazzoni<br>
+                    <strong>Divya Thekke Kanapram,</strong> Pablo Marin-Plaza, Lucio Marcenaro, David Martin, Arturo de la Escalera, and Carlo Regazzoni<br>
                     <a href="https://doi.org/10.1007/978-3-030-35990-4_18" target="_blank">
                         Self-awareness in Intelligent Vehicles: Feature-Based Dynamic Bayesian Models for Abnormality Detection
                     </a>
@@ -181,26 +135,12 @@
                         </a>
                     </span>
                     <span style="display: inline-block;">
-                        <em>Robotics and Autonomous Systems Journal,Volume 134, 2020 </em>      
+                        <em>Robotics and Autonomous Systems Journal, Volume 134, 2020</em>
                     </span>
+                    <p>This work introduces self-awareness (SA) models for intelligent vehicles, focusing on abnormality detection via feature-based switching DBNs. The method trains DBNs on pairs of low-dimensional sensor data, using an MJPF to identify optimal feature combinations for reliable prediction. This approach achieved high accuracy (AUC 78.20%) in automatically detecting unseen maneuvers using the Steering Angle-Power feature pair.</p>
                 </li>
                 <li>
-                    <strong>Divya Thekke Kanapram,</strong>Pablo Marin-Plaza, Lucio Marcenaro, David Martin, Arturo de la Escalera and Carlo Regazzoni<br>
-                    <a href="https://doi.org/10.1007/978-3-030-35990-4_18" target="_blank">
-                        Self-Awareness In Intelligent Vehicles: Experience-Based Abnormality Detection
-                    </a>
-                    <br>
-                    <span style="display: inline-block; margin-right: 10px;">
-                        <a href="Publications/4_Self-awareness in Intelligent VehiclesExperience Based Abnormality DetectionRobot2019_Camera_ready_version_final.pdf" target="_blank">
-                            [PDF]
-                        </a>
-                    </span>
-                    <span style="display: inline-block;">
-                        <em>ROBOT 2019:Fourth Iberian Robotics Conference, pp 216-228 </em>
-                    </span>
-                </li>
-                <li>
-                    <strong>Divya Thekke Kanapram,</strong> Damian Campo, Mohamad Baydoun, Lucio Marcenaro, Eliane L. Bodanese, Carlo Regazzoni and Mario Marchese<br>
+                    <strong>Divya Thekke Kanapram,</strong> Damian Campo, Mohamad Baydoun, Lucio Marcenaro, Eliane L. Bodanese, Carlo Regazzoni, and Mario Marchese<br>
                     <a href="https://doi.org/10.1109/WF-IoT.2019.8767204" target="_blank">
                         Dynamic Bayesian Approach for Decision-Making in Ego-Things
                     </a>
@@ -213,22 +153,28 @@
                     <span style="display: inline-block;">
                         <em>2019 IEEE 5th, World Forum on Internet of Things (WF-IoT)</em>
                     </span>
-                <li><a href="Publications/Divya_Thekke_Kanapram_PhD thesis.pdf" target="_blank">PhD thesis</a> -</a> Title: Ego things: Networks Of Self-Aware Intelligent Objects. Multi-modal dynamic Bayesian models for self-awareness and collective awareness in agents’ network : The research aimed to develop a hierarchical dynamic Bayesian Network using data-driven methods, incorpo- rating self-awareness and collective awareness in intelligent agent networks for anomaly detection, decision- making, and incremental learning of new models from new experiences. Machine learning, signal processing, and IoT were utilized to implement these functionalities while analyzing the effects of networking protocols and communications. The model was further enhanced with interpretability by applying graph-matching techniques.<br>
-                Public URL: <a href="https://qmro.qmul.ac.uk/xmlui/handle/123456789/77203?show=full" target="_blank">Access the thesis</a> </li>
-                <span style="display: inline-block; margin-right: 10px;">
-                    <a href="Publications/Divya_Thekke_Kanapram_PhD thesis.pdf" target="_blank">
-                        [PDF]
-                    </a>
-                </span>
+                    <p>This paper presents an approach for abnormality detection in ego-things by generating multiple DBN inference models from diverse sensor data features. Utilizing Growing Neural Gas (GNG) and a Markov Jump Particle Filter (MJPF), the system employs Hellinger distance to assess model precision. The method successfully selects the optimal feature set (Steering Angle-Power) for maximizing anomaly recognition and enhancing prediction accuracy in networking operations.</p>
+                </li>
+                <li>
+                    <a href="Publications/Divya_Thekke_Kanapram_PhD thesis.pdf" target="_blank">PhD thesis</a> - Title: Ego things: Networks Of Self-Aware Intelligent Objects. Multi-modal dynamic Bayesian models for self-awareness and collective awareness in agents’ network : The research aimed to develop a hierarchical dynamic Bayesian Network using data-driven methods, incorporating self-awareness and collective awareness in intelligent agent networks for anomaly detection, decision-making, and incremental learning of new models from new experiences. Machine learning, signal processing, and IoT were utilized to implement these functionalities while analyzing the effects of networking protocols and communications. The model was further enhanced with interpretability by applying graph-matching techniques.<br>
+                    Public URL: <a href="https://qmro.qmul.ac.uk/xmlui/handle/123456789/77203?show=full" target="_blank">Access the thesis</a>
+                    <span style="display: inline-block; margin-right: 10px;">
+                        <a href="Publications/Divya_Thekke_Kanapram_PhD thesis.pdf" target="_blank">
+                            [PDF]
+                        </a>
+                    </span>
+                </li>
                 <li>
                     <a href="https://doi.org/10.1109/NETSOFT.2017.8004249" target="_blank">
                         A framework to correlate power consumption and resource usage in cloud infrastructures
                     </a>
+                    <p>This paper presents the <strong>Green Cloud Abstraction Agent (GCAA)</strong> framework designed to correlate resource usage (e.g., CPU) and energy consumption in cloud infrastructures, supporting energy-efficiency strategies like workload consolidation. The GCAA implementation integrates power measurements gathered via <strong>Kwapi</strong> and <strong>IPMI</strong> into OpenStack Ceilometer to provide dynamic, precise power-to-usage curves. This capability is essential for orchestrators optimizing VM placement in both single and federated clouds.</p>
                 </li>
                 <li>
                     <a href="https://doi.org/10.1109/FMEC.2017.7946418" target="_blank">
                         Exploring the trade-off between performance and energy consumption in cloud infrastructures
                     </a>
+                    <p>This work outlines a framework for exploring the performance-energy consumption trade-off, vital for optimizing workload consolidation in distributed (fog/edge) cloud environments. The proposed <strong>Green Cloud Abstraction Agent (GCAA)</strong> architecture uses the <strong>Kwapi</strong> framework to integrate power measurements (via SNMP/IPMI) into OpenStack Ceilometer. This infrastructure provides the necessary energy abstraction for green orchestration, enabling algorithms to make efficient VM placement decisions.</p>
                 </li>
             </ol>
         </section>
